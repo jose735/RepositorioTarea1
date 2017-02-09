@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="AsistenciaEventos.Grafica.PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Asistencia y Registro de Eventos</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS/bootstrap.css" rel="stylesheet" />
+    <script src="JS/bootstrap.min.js"></script>
+    <link href="CSS/font-awesome.min.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">SIRE</a>
+                </div>
+                <div class="navbar-collapse collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Inicio</a></li>
+                        <li><a href="#">Registrar Evento</a></li>
+                        <li><a href="#">Registrar Miembros</a></li>
+                        <li><a href="#">Reportes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="footerwrap">
+	 	<div class="container">
+		 	<div class="row">
+		 		<div class="col-lg-4">
+		 			<h4>About</h4>
+		 			<div class="hline-w"></div>
+		 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>Our Bunker</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				Some Ave, 987,<br/>
+		 				23890, New York,<br/>
+		 				United States.<br/>
+		 			</p>
+		 		</div>
+		 	
+		 	</div><! --/row -->
+	 	</div><! --/container -->
+	 </div><! --/footerwrap -->
+    </form>
+</body>
+</html>
