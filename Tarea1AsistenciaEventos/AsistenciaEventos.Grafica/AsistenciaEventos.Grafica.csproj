@@ -94,11 +94,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\small-business.css" />
+    <Content Include="CSS\stylish-portfolio.css" />
+    <Content Include="RegistrarAsistencia.aspx" />
+    <Content Include="RegistrarEvento.aspx" />
+    <Content Include="Imagenes\img-1.jpg" />
+    <Content Include="Principal.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="PaginaMaestra.Master" />
     <Content Include="CSS\bootstrap-theme.css.map" />
     <Content Include="CSS\bootstrap-theme.min.css.map" />
     <Content Include="CSS\bootstrap.css.map" />
@@ -107,6 +112,7 @@
     <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="PaginaMaestra.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -125,19 +131,25 @@
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="InicioSesion.aspx" />
     <Content Include="JS\index.js" />
-    <Content Include="Principal.aspx" />
     <Content Include="JS\bootstrap.js" />
     <Content Include="JS\bootstrap.min.js" />
     <Content Include="JS\npm.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InicioSesion.aspx.cs">
-      <DependentUpon>InicioSesion.aspx</DependentUpon>
+    <Compile Include="RegistrarAsistencia.aspx.cs">
+      <DependentUpon>RegistrarAsistencia.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="InicioSesion.aspx.designer.cs">
-      <DependentUpon>InicioSesion.aspx</DependentUpon>
+    <Compile Include="RegistrarAsistencia.aspx.designer.cs">
+      <DependentUpon>RegistrarAsistencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarEvento.aspx.cs">
+      <DependentUpon>RegistrarEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarEvento.aspx.designer.cs">
+      <DependentUpon>RegistrarEvento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Principal.aspx.cs">
       <DependentUpon>Principal.aspx</DependentUpon>
@@ -145,6 +157,13 @@
     </Compile>
     <Compile Include="Principal.aspx.designer.cs">
       <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSesion.aspx.cs">
+      <DependentUpon>InicioSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioSesion.aspx.designer.cs">
+      <DependentUpon>InicioSesion.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginaMaestra.Master.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
@@ -155,6 +174,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
