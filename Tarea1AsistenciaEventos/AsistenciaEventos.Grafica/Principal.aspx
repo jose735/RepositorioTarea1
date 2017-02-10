@@ -14,7 +14,7 @@
             <div class="col-md-4">
                 <h1>Registro de eventos y asistencia de miembros</h1>
                 <p>Esta es una página que se encarga de la creación de eventos de cualquier tipo. Este tambien se encarga del control de asistencia de los miembros que se encuentren registrados en esta página como usuarios</p>
-                <a class="btn btn-primary btn-lg" href="#">Asistir a un evento</a>
+                <a class="btn btn-primary btn-lg" href="RegistrarAsistencia.aspx">Asistir a un evento</a>
             </div>
             <!-- /.col-md-4 -->
         </div>
@@ -38,13 +38,13 @@
             <div class="col-md-4">
                 <h2>Registrar Eventos</h2>
                 <p>Se encarga de la creacion de eventos dando a conocer la fecha en la que se dara a cabo el evento y el nombre de dicho evento. Se pueden crear los eventos que quieras.</p>
-                <a class="btn btn-default" href="#">Ir a crear evento</a>
+                <a class="btn btn-default" href="RegistrarEvento.aspx">Ir a crear evento</a>
             </div>
             <!-- /.col-md-4 -->
             <div class="col-md-4">
                 <h2>Registrar Asistencia</h2>
                 <p>Aquí puedes seleccionar el evento que tu creaste o el que otros crearosn y registrar tu asistencia en él. Para ellos ya debiste ser un usuario de la página y buscarte por medio de tú código de membresia, revisa tus datos y confirma tu asistencia.</p>
-                <a class="btn btn-default" href="#">Ir a registro de asistencia</a>
+                <a class="btn btn-default" href="RegistrarAsistencia.aspx">Ir a registro de asistencia</a>
             </div>
             <!-- /.col-md-4 -->
             <div class="col-md-4">
