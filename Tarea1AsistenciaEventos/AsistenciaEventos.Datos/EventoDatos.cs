@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AsistenciaEventos.Datos
 {
-    public class Class1
+    public class EventoDatos
     {
     }
 }
