@@ -9,7 +9,7 @@ namespace AsistenciaEventos.Entidades
     public class Usuario
     {
         public String  nombreUsuario { get; set; }
-        public String nombreUsuario1 { get; set; }
+
 
     }
 }
