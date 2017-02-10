@@ -29,7 +29,7 @@ namespace AsistenciaEventos.Datos
             comando.CommandType = CommandType.StoredProcedure;
 
             comando.Parameters.AddWithValue("@Id", id);
-            comando.Parameters.AddWithValue("@Nombre", fecha);
+            comando.Parameters.AddWithValue("@Fecha", fecha);
             db.ExecuteNonQuery(comando);
         }
 
