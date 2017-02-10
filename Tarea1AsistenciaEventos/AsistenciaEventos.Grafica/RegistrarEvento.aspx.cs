@@ -11,7 +11,7 @@ namespace AsistenciaEventos.Grafica
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            txtFechaEvento_CalendarExtender.StartDate = DateTime.Now;
         }
     }
 }
