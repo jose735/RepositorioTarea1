@@ -10,7 +10,6 @@ namespace AsistenciaEventos.Entidades
     {
         public String nombreUsuario { get; set; }
         public String contrasenna { get; set; }
-        // Vallase a la mierda
 
 
     }
