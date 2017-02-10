@@ -178,7 +178,16 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AsistenciaEventos.Entidades\AsistenciaEventos.Entidades.csproj">
+      <Project>{6159ac8f-5a9d-46df-9d35-166532d5166f}</Project>
+      <Name>AsistenciaEventos.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AsistenciaEventos.Logica\AsistenciaEventos.Logica.csproj">
+      <Project>{8143b4dd-659f-41ca-a97a-537ae9a38fa6}</Project>
+      <Name>AsistenciaEventos.Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
