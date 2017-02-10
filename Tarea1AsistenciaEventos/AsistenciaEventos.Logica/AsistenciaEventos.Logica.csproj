@@ -43,6 +43,16 @@
     <Compile Include="EventoLogica.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AsistenciaEventos.Datos\AsistenciaEventos.Datos.csproj">
+      <Project>{58efda6c-0b5f-4ee1-810e-6a354397cfcc}</Project>
+      <Name>AsistenciaEventos.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AsistenciaEventos.Entidades\AsistenciaEventos.Entidades.csproj">
+      <Project>{6159ac8f-5a9d-46df-9d35-166532d5166f}</Project>
+      <Name>AsistenciaEventos.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

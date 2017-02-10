@@ -13,5 +13,35 @@ namespace AsistenciaEventos.Grafica
         {
             txtFechaEvento_CalendarExtender.StartDate = DateTime.Now;
         }
+
+        protected void btnCrearEvento_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void dgvEventos_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        {
+
+        }
+
+        protected void dgvEventos_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+        }
+
+        protected void dgvEventos_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+
+        }
+
+        protected void dgvEventos_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+
+        }
+
+        protected void dgvEventos_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+
+        }
     }
 }
