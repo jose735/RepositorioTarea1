@@ -10,6 +10,6 @@ namespace AsistenciaEventos.Entidades
     {
         public String  nombreUsuario { get; set; }
         public String nombreUsuario1 { get; set; }
-        public String nombreUsuario2 { get; set; }
+
     }
 }
