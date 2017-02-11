@@ -14,7 +14,7 @@ namespace AsistenciaEventos.Datos
         {
             Database db = DatabaseFactory.CreateDatabase("Default");
 
-            SqlCommand comando = new SqlCommand("PA_Seleccionar_Todos_Eventos");
+            SqlCommand comando = new SqlCommand("PA_Seleccionar_Usuario");
             // Es requerido indicar que el tipo es un StoreProcedure
             comando.CommandType = CommandType.StoredProcedure;
 

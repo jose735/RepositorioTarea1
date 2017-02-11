@@ -7,7 +7,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Asistencia y Registro de Eventos</title>
     <link href="CSS/loginStyle.css" rel="stylesheet" />
-    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
     <script src="JS/index.js"></script>
 </head>
 <body>
@@ -21,13 +20,6 @@
                 <asp:TextBox ID="txtUsuario" runat="server" CssClass="input-txt"></asp:TextBox>
                 <h4 style="color: white;">Clave de acceso: </h4>
                 <asp:TextBox ID="txtContrasenna" TextMode="Password" runat="server" CssClass="input-txt"></asp:TextBox>
-                <div class="row form-group text-center">
-                    <div class="col-sm-2 col-md-4">
-                        <div class="alert alert-info" runat="server" id="cajaError" visible="false">
-                            <asp:Label ID="lblError" runat="server" Text=""></asp:Label>
-                        </div>
-                    </div>
-                </div>
                 <div class="login-footer">
                     <asp:Button ID="btnIngresar" OnClick="btnIngresar_Click" runat="server" Text="Iniciar Sesión" CssClass="btn btn--right" />
                 </div>

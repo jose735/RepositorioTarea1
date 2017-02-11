@@ -22,26 +22,38 @@ namespace AsistenciaEventos.Grafica
             String nombre = txtUsuario.Text;
             String contrasenna = txtContrasenna.Text;
 
-            if (nombre == "" || contrasenna == "")
+            Show("Hola");
+
+            //if (nombre == "" || contrasenna == "")
+            //{
+            //    Show("Debe llenar los campos correspondientes a nombre de usuario y contraseña");
+            //}
+            //else
+            //{
+            //    if (usuarioLogica.SeleccionarTodos(nombre, contrasenna).Count > 0)
+            //    {
+            //        Response.Redirect("Principal.aspx");
+            //    }
+            //    else
+            //    {
+            //        Show("Usuario y/o contraseña invalido(s)");
+            //    }
+            //}
+        }
+
+        public static void Show(string message)
+        {
+            // Cleans the message to allow single quotation marks 
+            string cleanMessage = message.Replace("'", "\'");
+            string script = "<script type="text / javascript">alert('" + cleanMessage + "');</script>";
+
+            // Gets the executing web page 
+            Page page = HttpContext.Current.CurrentHandler as Page;
+
+            // Checks if the handler is a Page and that the script isn't allready on the Page 
+            if (page != null && !page.ClientScript.IsClientScriptBlockRegistered("alert"))
             {
-                cajaError.Visible = true;
-                lblError.CssClass = "text-warning";
-                lblError.Text = "Debe rellenar los campos correspondientes al nombre de usuario y clave de acceso";
-            }
-            else
-            {
-                if (usuarioLogica.SeleccionarTodos(nombre, contrasenna).Count > 0)
-                {
-                    cajaError.Visible = false;
-                    lblError.Text = "";
-                    Response.Redirect("Principal.aspx");
-                }
-                else
-                {
-                    cajaError.Visible = true;
-                    lblError.CssClass = "text-warning";
-                    lblError.Text = "Usuario o contraseña invalidos";
-                }
+                page.ClientScript.RegisterClientScriptBlock(typeof(Alert), "alert", script);
             }
         }
     }
