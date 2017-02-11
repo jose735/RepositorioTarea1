@@ -22,38 +22,20 @@ namespace AsistenciaEventos.Grafica
             String nombre = txtUsuario.Text;
             String contrasenna = txtContrasenna.Text;
 
-            Show("Hola");
-
-            //if (nombre == "" || contrasenna == "")
-            //{
-            //    Show("Debe llenar los campos correspondientes a nombre de usuario y contraseña");
-            //}
-            //else
-            //{
-            //    if (usuarioLogica.SeleccionarTodos(nombre, contrasenna).Count > 0)
-            //    {
-            //        Response.Redirect("Principal.aspx");
-            //    }
-            //    else
-            //    {
-            //        Show("Usuario y/o contraseña invalido(s)");
-            //    }
-            //}
-        }
-
-        public static void Show(string message)
-        {
-            // Cleans the message to allow single quotation marks 
-            string cleanMessage = message.Replace("'", "\'");
-            string script = "<script type="text / javascript">alert('" + cleanMessage + "');</script>";
-
-            // Gets the executing web page 
-            Page page = HttpContext.Current.CurrentHandler as Page;
-
-            // Checks if the handler is a Page and that the script isn't allready on the Page 
-            if (page != null && !page.ClientScript.IsClientScriptBlockRegistered("alert"))
+            if (nombre == "" || contrasenna == "")
             {
-                page.ClientScript.RegisterClientScriptBlock(typeof(Alert), "alert", script);
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('Debe llenar los campos correspondientes a nombre de usuario y contraseña');", true);
+            }
+            else
+            {
+                if (usuarioLogica.SeleccionarTodos(nombre, contrasenna).Count > 0)
+                {
+                    Response.Redirect("Principal.aspx");
+                }
+                else
+                {
+                    ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('Usuario y/o contraseña invalido(s)');", true);
+                }
             }
         }
     }
