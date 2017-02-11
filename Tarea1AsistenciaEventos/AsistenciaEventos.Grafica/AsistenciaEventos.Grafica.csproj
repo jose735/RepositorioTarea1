@@ -47,6 +47,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
     </Reference>
+    <Reference Include="Excel.4.5">
+      <HintPath>D:\output\output\net45\Excel.4.5.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -100,6 +103,9 @@
   <ItemGroup>
     <Content Include="CSS\small-business.css" />
     <Content Include="CSS\stylish-portfolio.css" />
+    <Content Include="PrincipalMaster.aspx" />
+    <Content Include="RegistroAsistenciaMaster.aspx" />
+    <Content Include="PadronMiembros.aspx" />
     <Content Include="RegistrarAsistencia.aspx" />
     <Content Include="RegistrarEvento.aspx" />
     <Content Include="Imagenes\img-1.jpg" />
@@ -117,6 +123,7 @@
     <Content Include="Fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="PaginaMaestra.Master" />
+    <Content Include="Master.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -141,6 +148,34 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PrincipalMaster.aspx.cs">
+      <DependentUpon>PrincipalMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrincipalMaster.aspx.designer.cs">
+      <DependentUpon>PrincipalMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroAsistenciaMaster.aspx.cs">
+      <DependentUpon>RegistroAsistenciaMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroAsistenciaMaster.aspx.designer.cs">
+      <DependentUpon>RegistroAsistenciaMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PadronMiembros.aspx.cs">
+      <DependentUpon>PadronMiembros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PadronMiembros.aspx.designer.cs">
+      <DependentUpon>PadronMiembros.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarAsistencia.aspx.cs">
       <DependentUpon>RegistrarAsistencia.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -187,6 +222,9 @@
       <Project>{8143b4dd-659f-41ca-a97a-537ae9a38fa6}</Project>
       <Name>AsistenciaEventos.Logica</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Administrador\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

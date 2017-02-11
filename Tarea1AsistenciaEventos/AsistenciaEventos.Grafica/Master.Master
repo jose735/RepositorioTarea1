@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="AsistenciaEventos.Grafica.PaginaMaestra" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="AsistenciaEventos.Grafica.Master" %>
 
 <!DOCTYPE html>
 
@@ -32,11 +32,8 @@
                 <div class="navbar-collapse collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="Principal.aspx">INICIO</a></li>
-                        <li><a href="RegistrarEvento.aspx">REGISTRO DE EVENTOS</a></li>
                         <li><a href="RegistrarAsistencia.aspx">REGISTRO DE ASISTENCIA</a></li>
-                        <li><a href="#">REPORTE DE ASISTENCIA</a></li>
-                         <li><a href="PadronMiembros.aspx">CARGAR MIEMBROS EXCEL</a></li>
-                        <li><a href="PrincipalMaster.aspx">CERRAR SESIÓN</a></li>
+                        <li><a href="InicioSesion.aspx">INICIAR SESION</a></li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
