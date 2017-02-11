@@ -35,6 +35,7 @@
                         <li><a href="RegistrarEvento.aspx">REGISTRO DE EVENTOS</a></li>
                         <li><a href="RegistrarAsistencia.aspx">REGISTRO DE ASISTENCIA</a></li>
                         <li><a href="#">REPORTE DE ASISTENCIA</a></li>
+                        <li><a href="InicioSesion.aspx">CERRAR SESIÓN</a></li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
