@@ -66,5 +66,14 @@
                 <asp:Button ID="btnCierreMesa" CssClass="btn btn-default" runat="server" Text="Cierre de Mesa" />
             </div>
         </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; &nbsp;&nbsp; Alberth Garita Retana & Jose Cano Espinoza, &nbsp;&nbsp; 2017</p>
+                </div>
+            </div>
+        </footer>
     </div>
 </asp:Content>

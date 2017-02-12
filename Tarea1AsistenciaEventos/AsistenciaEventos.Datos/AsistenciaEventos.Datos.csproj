@@ -45,6 +45,7 @@
     <Compile Include="DatabaseFactory.cs" />
     <Compile Include="EventoDatos.cs" />
     <Compile Include="Log.cs" />
+    <Compile Include="MiembroDatos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioDatos.cs" />
   </ItemGroup>

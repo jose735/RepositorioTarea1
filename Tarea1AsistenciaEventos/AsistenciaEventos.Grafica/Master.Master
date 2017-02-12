@@ -27,12 +27,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">SIRE</a>
+                    <a class="navbar-brand" href="PrincipalMaster.aspx">SIRE</a>
                 </div>
                 <div class="navbar-collapse collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="Principal.aspx">INICIO</a></li>
-                        <li><a href="RegistrarAsistencia.aspx">REGISTRO DE ASISTENCIA</a></li>
+                        <li class="active"><a href="PrincipalMaster.aspx">INICIO</a></li>
+                        <li><a href="RegistroAsistenciaMaster.aspx">REGISTRO DE ASISTENCIA</a></li>
                         <li><a href="InicioSesion.aspx">INICIAR SESION</a></li>
                     </ul>
                 </div>
