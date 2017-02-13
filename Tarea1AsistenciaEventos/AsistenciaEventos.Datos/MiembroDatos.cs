@@ -46,5 +46,18 @@ namespace AsistenciaEventos.Datos
             DataSet ds = db.ExecuteReader(comando, "Miembro");
             return ds;
         }
+
+        public DataSet SeleccionarPorIdentificadorMiembro(String identificador)
+        {
+            Database db = DatabaseFactory.CreateDatabase("Default");
+
+            SqlCommand comando = new SqlCommand("PA_Seleccionar_Por_Identificador_Miembro");
+            // Es requerido indicar que el tipo es un StoreProcedure
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@Identificador", identificador);
+
+            DataSet ds = db.ExecuteReader(comando, "Miembro");
+            return ds;
+        }
     }
 }

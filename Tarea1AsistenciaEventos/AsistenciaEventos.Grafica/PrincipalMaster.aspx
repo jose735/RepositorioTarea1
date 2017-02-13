@@ -43,7 +43,7 @@
             <div class="col-md-4">
                 <h2>Registrar Asistencia</h2>
                 <p>Aquí puedes seleccionar el evento que tu creaste o el que otros crearosn y registrar tu asistencia en él. Para ellos ya debiste ser un usuario de la página y buscarte por medio de tú código de membresia, revisa tus datos y confirma tu asistencia.</p>
-                <a class="btn btn-default" href="InicioSesion.aspx">Ir a registro de asistencia</a>
+                <a class="btn btn-default" href="RegistroAsistenciaMaster.aspx">Ir a registro de asistencia</a>
             </div>
             <!-- /.col-md-4 -->
             <div class="col-md-4">

@@ -17,6 +17,11 @@ namespace AsistenciaEventos.Logica
             eventoDatos.Insertar(evento.nombre, evento.fecha, evento.cierreMesa);
         }
 
+        public void InsertarAsistencia(int idEvento, String idMiembro, String estadoAsistencia, String horaAsistencia, String usuarioAsistencia)
+        {
+            eventoDatos.InsertarAsistencia(idEvento, idMiembro, estadoAsistencia, horaAsistencia, usuarioAsistencia);
+        }
+
         public void ModificarFecha(Evento evento)
         {
             eventoDatos.ModificarFecha(evento.codigo, evento.fecha);
@@ -46,6 +51,31 @@ namespace AsistenciaEventos.Logica
                 lista.Add(e);
             }
             return lista;
+        }
+
+        public Evento SeleccionarPorIdEvento(int id)
+        {
+            Evento e = new Evento();
+            DataSet ds = eventoDatos.SeleccionarPorIdEvento(id);
+            foreach (DataRow row in ds.Tables[0].Rows)
+            {
+                e.codigo = Convert.ToInt32(row["Id"]);
+                e.nombre = row["Nombre"].ToString();
+                e.fecha = row["FechaEvento"].ToString();
+                e.cierreMesa = row["CierreMesa"].ToString();
+            }
+            return e;
+        }
+
+        public Boolean SeleccionarPorIdEventoMiembro(int idEvento, String idMiembro)
+        {
+            Boolean existe = false;
+            DataSet ds = eventoDatos.SeleccionarPorIdEventoMiembro(idEvento, idMiembro);
+            foreach (DataRow row in ds.Tables[0].Rows)
+            {
+                existe = true;
+            }
+            return existe;
         }
     }
 }

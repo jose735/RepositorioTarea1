@@ -12,6 +12,7 @@ namespace AsistenciaEventos.Grafica
     public partial class InicioSesion : System.Web.UI.Page
     {
         UsuarioLogica usuarioLogica = new UsuarioLogica();
+        public static String nombreUsuario = "";
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -30,6 +31,7 @@ namespace AsistenciaEventos.Grafica
             {
                 if (usuarioLogica.SeleccionarTodos(nombre, contrasenna).Count > 0)
                 {
+                    nombreUsuario = txtUsuario.Text;
                     Response.Redirect("Principal.aspx");
                 }
                 else

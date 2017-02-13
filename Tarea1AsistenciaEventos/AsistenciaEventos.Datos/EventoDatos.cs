@@ -21,6 +21,19 @@ namespace AsistenciaEventos.Datos
             db.ExecuteNonQuery(comando);
         }
 
+        public void InsertarAsistencia(int idEvento, String idMiembro, String estadoAsistencia, String horaAsistencia, String usuarioAsistencia)
+        {
+            Database db = DatabaseFactory.CreateDatabase("Default");
+            SqlCommand comando = new SqlCommand("PA_Insertar_EventoMiembro");
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@IdEvento", idEvento);
+            comando.Parameters.AddWithValue("@IdMiembro", idMiembro);
+            comando.Parameters.AddWithValue("@EstadoAsistencia", estadoAsistencia);
+            comando.Parameters.AddWithValue("@HoraAsistencia", horaAsistencia);
+            comando.Parameters.AddWithValue("@UsuarioAsistencia", usuarioAsistencia);
+            db.ExecuteNonQuery(comando);
+        }
+
         public void ModificarFecha(int id, String fecha)
         {
             Database db = DatabaseFactory.CreateDatabase("Default");
@@ -66,6 +79,33 @@ namespace AsistenciaEventos.Datos
             comando.CommandType = CommandType.StoredProcedure;
 
             DataSet ds = db.ExecuteReader(comando, "Evento");
+            return ds;
+        }
+
+        public DataSet SeleccionarPorIdEvento(int id)
+        {
+            Database db = DatabaseFactory.CreateDatabase("Default");
+
+            SqlCommand comando = new SqlCommand("PA_Seleccionar_Por_Id_Evento");
+            // Es requerido indicar que el tipo es un StoreProcedure
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@Id", id);
+
+            DataSet ds = db.ExecuteReader(comando, "Evento");
+            return ds;
+        }
+
+        public DataSet SeleccionarPorIdEventoMiembro(int idEvento, String idMiembro)
+        {
+            Database db = DatabaseFactory.CreateDatabase("Default");
+
+            SqlCommand comando = new SqlCommand("PA_Seleccionar_Por_Id_EventoMiembro");
+            // Es requerido indicar que el tipo es un StoreProcedure
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@IdEvento", idEvento);
+            comando.Parameters.AddWithValue("@IdMiembro", idMiembro);
+
+            DataSet ds = db.ExecuteReader(comando, "EventoMiembro");
             return ds;
         }
     }

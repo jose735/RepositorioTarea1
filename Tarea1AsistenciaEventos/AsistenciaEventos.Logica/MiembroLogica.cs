@@ -41,5 +41,22 @@ namespace AsistenciaEventos.Logica
             }
             return lista;
         }
+
+        public Miembro SeleccionarPorIdentificadorMiembro(String identificador)
+        {
+            Miembro m = new Miembro();
+            DataSet ds = miembroDatos.SeleccionarPorIdentificadorMiembro(identificador);
+            foreach (DataRow row in ds.Tables[0].Rows)
+            {
+                m.Id = row["Id"].ToString();
+                m.Nombre = row["Nombre"].ToString();
+                m.Cedula = row["Cedula"].ToString();
+                m.Estado1 = row["Estado1"].ToString();
+                m.Estado2 = row["Estado2"].ToString();
+                m.Correo = row["Correo"].ToString();
+                m.Telefono = row["Telefono"].ToString();
+            }
+            return m;
+        }
     }
 }

@@ -8,7 +8,7 @@
         <div class="row form-group">
             <div class="col-sm-2 col-md-4">
                 <asp:Label ID="Label1" runat="server" Text="Lista de eventos disponibles: "></asp:Label>
-                <asp:DropDownList ID="ddlEventos" CssClass="form-control" runat="server"></asp:DropDownList>
+                <asp:DropDownList ID="ddlEventos" AutoPostBack="true" CssClass="form-control" runat="server" OnSelectedIndexChanged="ddlEventos_SelectedIndexChanged"></asp:DropDownList>
             </div>
         </div>
 
@@ -22,7 +22,7 @@
 
         <div class="row form-group">
             <div class="col-xs-6 col-sm-2">
-                <asp:Button ID="btnBuscarMiembro" CssClass="btn btn-primary" Visible="false" runat="server" Text="Buscar Miembro" />
+                <asp:Button ID="btnBuscarMiembro" CssClass="btn btn-primary" Visible="false" runat="server" Text="Buscar Miembro" OnClick="btnBuscarMiembro_Click" />
             </div>
         </div>
 
@@ -30,7 +30,7 @@
             <div class="col-sm-4 col-md-8">
                 <div class="col-sm-2 col-md-6">
                     <asp:Label ID="Label2" runat="server" Text="Número de identificación: "></asp:Label>
-                    <asp:TextBox ID="txtIdentificacion" CssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtIdentificacion" CssClass="form-control" runat="server" OnTextChanged="txtIdentificacion_TextChanged"></asp:TextBox>
                     <ajaxToolkit:TextBoxWatermarkExtender runat="server" WatermarkText="Cédula o Número de miembro" BehaviorID="txtIdentificacion_TextBoxWatermarkExtender" TargetControlID="txtIdentificacion" ID="txtIdentificacion_TextBoxWatermarkExtender"></ajaxToolkit:TextBoxWatermarkExtender>
                 </div>
                 <div class="col-sm-2 col-md-6">
@@ -59,11 +59,7 @@
 
         <div class="row form-group">
             <div class="col-xs-6 col-sm-2" runat="server" id="cajaRegistroMiembro3" visible="false">
-                <asp:Button ID="btnRegistrarMiembro" CssClass="btn btn-primary" runat="server" Text="Registrar Asistencia" />
-            </div>
-
-            <div class="col-xs-6 col-sm-2">
-                <asp:Button ID="btnCierreMesa" CssClass="btn btn-default" runat="server" Text="Cierre de Mesa" />
+                <asp:Button ID="btnRegistrarMiembro" CssClass="btn btn-primary" runat="server" Text="Registrar Asistencia" OnClick="btnRegistrarMiembro_Click" />
             </div>
         </div>
 
