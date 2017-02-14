@@ -104,6 +104,7 @@
   <ItemGroup>
     <Content Include="CSS\small-business.css" />
     <Content Include="CSS\stylish-portfolio.css" />
+    <Content Include="InicioSesion2.aspx" />
     <Content Include="ReporteMiembrosPorEvento.aspx" />
     <Content Include="PrincipalMaster.aspx" />
     <Content Include="RegistroAsistenciaMaster.aspx" />
@@ -151,6 +152,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InicioSesion2.aspx.cs">
+      <DependentUpon>InicioSesion2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioSesion2.aspx.designer.cs">
+      <DependentUpon>InicioSesion2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ReporteMiembrosPorEvento.aspx.cs">
       <DependentUpon>ReporteMiembrosPorEvento.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
