@@ -5,6 +5,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
+        <h2 class="text-center">Pantalla de registro de miembros a un evento</h2>
+        <h4 class="text-center">Por favor, seleccione el evento, cliquée en el botón de buscar miembro y complete los campos correspondientes</h4>
         <div class="row form-group">
             <div class="col-sm-2 col-md-4">
                 <asp:Label ID="Label1" runat="server" Text="Lista de eventos disponibles: "></asp:Label>

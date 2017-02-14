@@ -67,6 +67,10 @@ html {
   float: right;
 }
 
+.btn--left {
+  float: left;
+}
+
 .icon {
   display: inline-block;
 }

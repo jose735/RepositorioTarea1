@@ -21,6 +21,8 @@
                 <h4 style="color: white;">Clave de acceso: </h4>
                 <asp:TextBox ID="txtContrasenna" TextMode="Password" runat="server" CssClass="input-txt"></asp:TextBox>
                 <div class="login-footer">
+                    <asp:Button ID="btnCancelar" OnClick="btnCancelar_Click" runat="server" Text="Cancelar" CssClass="btn btn--left" />
+                    
                     <asp:Button ID="btnIngresar" OnClick="btnIngresar_Click" runat="server" Text="Iniciar Sesión" CssClass="btn btn--right" />
                 </div>
             </div>

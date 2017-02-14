@@ -50,7 +50,7 @@
             <div class="col-md-4">
                 <h2>Reporte de asistencia de miembros</h2>
                 <p>Esta opción te permite ver a los miembros que participaron en el evento que desees buscar e incluso puedes descargar ese informe con el fin de tener un respaldo de las personas que llegaron a tu evento.</p>
-                <a class="btn btn-default" href="#">Ir a reporte</a>
+                <a class="btn btn-default" href="ReporteMiembrosPorEvento.aspx">Ir a reporte</a>
             </div>
             <!-- /.col-md-4 -->
         </div>

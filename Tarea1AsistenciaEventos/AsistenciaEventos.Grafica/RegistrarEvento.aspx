@@ -5,6 +5,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
+        <h2 class="text-center">Pantalla de registro de un evento</h2>
+        <h4 class="text-center">Por favor, complete los campos correspondientes a los datos del evento</h4>
         <div class="row form-group">
             <div class="col-xs-6 col-sm-2">
                 <asp:Label ID="Label1" runat="server" Text="Fecha del evento: "></asp:Label>

@@ -142,7 +142,7 @@ namespace AsistenciaEventos.Grafica
                                 String idMiembro = miembro.Id;
                                 String estadoAsistencia = "Presente";
                                 String horaAsistencia = DateTime.Now.ToString("hh:mm:ss tt");
-                                String usuarioAsistencia = InicioSesion.nombreUsuario;
+                                String usuarioAsistencia = miembro.Nombre;
                                 eventoLogica.InsertarAsistencia(idEvento, idMiembro, estadoAsistencia, horaAsistencia, usuarioAsistencia);
                                 ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('Registro completado exitosamente');", true);
                                 txtIdentificacion.Text = "";

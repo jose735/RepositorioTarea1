@@ -36,7 +36,7 @@ namespace AsistenciaEventos.Grafica
 
         protected void btnCargarExcel_Click(object sender, EventArgs e)
         {
-            miembroLogica.Eliminar();
+            //miembroLogica.Eliminar();
             //salvar el archivo en el sv
             string archivo = (DateTime.Now.ToString("yyyyMMddHHmmss") + "-" + file.FileName).ToLower();
 
@@ -81,7 +81,14 @@ namespace AsistenciaEventos.Grafica
 
                 if (miembro.Id != null)
                 {
-                    miembroLogica.Insertar(miembro);
+                    if (miembroLogica.SeleccionarPorIdentificadorMiembro(miembro.Id).Id != null)
+                    {
+                        miembroLogica.Modificar(miembro);
+                    }
+                    else
+                    {
+                        miembroLogica.Insertar(miembro);
+                    }
                 }
 
                 //asociados.Add(oAsociado);//llenaba una list de asociados

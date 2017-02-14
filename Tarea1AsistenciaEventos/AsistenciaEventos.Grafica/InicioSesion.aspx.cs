@@ -40,5 +40,10 @@ namespace AsistenciaEventos.Grafica
                 }
             }
         }
+
+        protected void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PrincipalMaster.aspx");
+        }
     }
 }

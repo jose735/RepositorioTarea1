@@ -15,5 +15,8 @@ namespace AsistenciaEventos.Entidades
         public String Estado2 { get; set; }
         public String Correo { get; set; }
         public String Telefono { get; set; }
+        public String horaAsistencia { get; set; }
+        public String usuarioAsistencia { get; set; }
+        public String estadoAsistencia { get; set; }
     }
 }

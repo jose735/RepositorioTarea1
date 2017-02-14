@@ -4,6 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
+        <h2 class="text-center">Lista de miembros en el padrón</h2>
+        <h4 class="text-center">Por favor, seleccione el documento que contenga la información suficiente y cliquée el botón de carga de datos</h4>
         <div class="row form-group">
             <div class="col-sm-2 col-md-4">
                 <asp:FileUpload ID="file" runat="server" CssClass="btn btn-default" />
